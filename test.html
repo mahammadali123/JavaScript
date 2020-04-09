@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JavaScript Task</title>
+	<meta charset="utf-8"/>
+	<link rel="stylesheet" type="text/css" href="src/gallery.css">
+	<script type="text/javascript" src="src/gallery.js"></script>
+</head>
+<body>
+<div id="first" >
+	<div id="head" ><h1>Hover on images to see the background effect <br>and Me!!</h1></div>
+	<div id="second">
+	<img src="src/1.jpeg" id="img1" width="20%" height="20%" onmouseover="Update(this)" onmouseout="Undo(this)"> 
+	<img src="src/2.jpeg" id="img2" width="20%" height="20%" onmouseover="Update(this)" onmouseout="Undo(this)">
+	<img src="src/3.jpeg" id="img3" width="20%" height="20%" onmouseover="Update(this)" onmouseout="Undo(this)">
+	</div>
+	
+</div>
+<div style="margin-top: 50px"></div>
+<div id="dateofbirth">
+	<h2>Lets Play with your Date Of Birth</h2>
+	<label>Enter Your Birthday</label> <input type="text" name="dob" placeholder="ex:21/06/2001"  value="" id='dob'>
+	<input type="submit" name="submit" value="Know Your Age" id="button" onclick="getAge()"> 
+	<p id="message"></p>
+	<p id="message2"></p>
+</div>
+<div style="margin-top: 50px"></div>
+<div id="colors">
+	<h2>Lets Play with Random Colors</h2>
+	<input type="submit" name="submit2" value="Generate Theme" id="theme" onclick="getTheme()">
+
+</div>
+<div style="margin-top: 150px">
+	
+</div>
+</body>
+</html>
